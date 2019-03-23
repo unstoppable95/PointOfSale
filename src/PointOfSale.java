@@ -16,15 +16,17 @@ public class PointOfSale {
         this.barCodesScanner = barCodesScanner;
     }
 
-    public void scanProduct(String barcode) {
+    public void scanProduct() {
+        String barcode=barCodesScanner.scanProductBarcode();
         if(barcode==null || barcode.isEmpty()){
             lcdDisplay.printCommunication(BarCodes.INVALID_BARCODE.name());
         }
         else if (barcode.equals(BarCodes.EXIT.name())){
-
+                printer.printReceipt(receipt.toString());
+                lcdDisplay.printTotalSum(receipt.getSum());
         }
         else {
-            Product p = new Product(barCodesScanner.scanProductBarcode());
+            Product p = new Product(barcode);
             if (p!=null){
                 receipt.addProduct(p);
                 lcdDisplay.printCommunication(p.toString());
