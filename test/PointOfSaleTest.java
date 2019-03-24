@@ -80,9 +80,10 @@ public class PointOfSaleTest {
         pointOfSale.onScanProduct(EXIT);
 
         Mockito.verify(lcdDisplay).printCommunication(p.toString());
-       // Mockito.verify(lcdDisplay).printCommunication(pointOfSale.getReceipt().toString());
+
         Mockito.verify(printer).printReceipt(pointOfSale.getReceipt().toString());
-        //Mockito.verifyNoMoreInteractions(lcdDisplay);
+        Mockito.verify(lcdDisplay).printTotalSum(pointOfSale.getReceipt().getSum());
+        Mockito.verifyNoMoreInteractions(lcdDisplay);
         Mockito.verifyNoMoreInteractions(printer);
     }
 
@@ -92,10 +93,9 @@ public class PointOfSaleTest {
 
         pointOfSale.onScanProduct(EXIT);
 
-       // Mockito.verify(lcdDisplay).printCommunication(p.toString());
-        // Mockito.verify(lcdDisplay).printCommunication(pointOfSale.getReceipt().toString());
         Mockito.verify(printer).printReceipt("Sum: 0.0");
-        //Mockito.verifyNoMoreInteractions(lcdDisplay);
+        Mockito.verify(lcdDisplay).printTotalSum(0.0);
+        Mockito.verifyNoMoreInteractions(lcdDisplay);
         Mockito.verifyNoMoreInteractions(printer);
     }
 

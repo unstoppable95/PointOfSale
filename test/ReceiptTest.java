@@ -26,4 +26,12 @@ public class ReceiptTest {
         assertEquals(p.getPrice(),receipt.getSum());
 
     }
+
+    @Test
+    public void checkAdd(){
+        Product p = new ProductBuilder("milk").createProduct();
+        int currentSize = receipt.getListOfProducts().size();
+        receipt.addProduct(p);
+        assertEquals(currentSize,receipt.getListOfProducts().size()-1);
+    }
 }
