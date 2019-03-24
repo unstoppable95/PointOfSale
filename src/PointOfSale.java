@@ -22,38 +22,42 @@ public class PointOfSale implements BarcodesScannerListener {
     public void onScanProduct(String barcode) {
 
         if(barcode==null || barcode.isEmpty()){
-            lcdDisplay.printCommunication(INVALID_BARCODE);
+            invalidBarcode();
         }
         else if (barcode.equals(EXIT)){
-                printer.printReceipt(receipt.toString());
-                lcdDisplay.printTotalSum(receipt.getSum());
+                exit();
         }
         else {
             Product p = productDao.getProductByBarcode(barcode);
             if (p!=null){
-                receipt.addProduct(p);
-                lcdDisplay.printCommunication(p.toString());
+                productExist(p);
             }
             else {
-                lcdDisplay.printCommunication(PRODUCT_NOT_FOUND);
+                productNotFound();
             }
         }
 
     }
 
+    private void invalidBarcode(){
+        lcdDisplay.printCommunication(INVALID_BARCODE);
+    }
 
+    private void exit(){
+        printer.printReceipt(receipt.toString());
+        lcdDisplay.printTotalSum(receipt.getSum());
+    }
 
-    public LcdDisplay getLcdDisplay() {
-        return lcdDisplay;
+    private void productExist(Product p){
+        receipt.addProduct(p);
+        lcdDisplay.printCommunication(p.toString());
+    }
+
+    private void productNotFound(){
+        lcdDisplay.printCommunication(PRODUCT_NOT_FOUND);
     }
 
     public Receipt getReceipt() {
         return receipt;
     }
-
-    public Printer getPrinter() {
-        return printer;
-    }
-
-   
 }

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaa762e1-f775-4714-9aa4-3ed4bb3b4c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CodesReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BarCodesScanner.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PointOfSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PointOfSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/PointOfSaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PointOfSaleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,15 +17,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Printer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProductDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -39,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProductBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -48,7 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="323">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#212#213#0" expanded="true" />
@@ -64,17 +54,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Receipt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="442">
+              <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BarcodesScannerListener.java">
+        <entry file="file://$PROJECT_DIR$/src/LcdDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/ReceiptTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/PointOfSaleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="170">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,28 +98,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CodesReader.java">
+        <entry file="file://$PROJECT_DIR$/src/BarcodesScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BarcodesScanner.java">
+        <entry file="file://$PROJECT_DIR$/test/BarcodesScannerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PointOfSale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+            <state relative-caret-position="825">
+              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="e#1317#1318#0" expanded="true" />
+                <element signature="e#1379#1380#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1627#1628#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,9 +141,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -141,10 +158,7 @@
         <option value="$PROJECT_DIR$/src/com/piotrpawlaczyk/pointofsale/BarCodesScanner.java" />
         <option value="$PROJECT_DIR$/src/test/src/main/BarCodesScannerTest.java" />
         <option value="$PROJECT_DIR$/src/Printer.java" />
-        <option value="$PROJECT_DIR$/src/LcdDisplay.java" />
         <option value="$PROJECT_DIR$/src/Receipt.java" />
-        <option value="$PROJECT_DIR$/test/ReceiptTest.java" />
-        <option value="$PROJECT_DIR$/test/PointOfSaleTest.java" />
         <option value="$PROJECT_DIR$/src/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/BarCodesScannerListener.java" />
         <option value="$PROJECT_DIR$/src/Scanner.java" />
@@ -154,6 +168,10 @@
         <option value="$PROJECT_DIR$/src/Product.java" />
         <option value="$PROJECT_DIR$/src/ProductBuilder.java" />
         <option value="$PROJECT_DIR$/src/PointOfSale.java" />
+        <option value="$PROJECT_DIR$/src/LcdDisplay.java" />
+        <option value="$PROJECT_DIR$/test/PointOfSaleTest.java" />
+        <option value="$PROJECT_DIR$/test/BarcodesScannerTest.java" />
+        <option value="$PROJECT_DIR$/test/ReceiptTest.java" />
       </list>
     </option>
   </component>
@@ -214,7 +232,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553447663665" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553452595221" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -278,44 +296,44 @@
       <workItem from="1553366355347" duration="624000" />
       <workItem from="1553412791775" duration="3090000" />
       <workItem from="1553440927715" duration="1106000" />
-      <workItem from="1553443814417" duration="2566000" />
+      <workItem from="1553443814417" duration="7425000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 18h 49m 11s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 17m 53s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 18h 50m 56s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 18m 12s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 04m 20s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 18m 27s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 08m 24s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 18m 36s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 17m 42s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 19m 46s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 18m 32s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 25m 56s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 44m 34s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 27m 56s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 45m 11s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 28m 40s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 46m 30s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 30m 19s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Point_Of_Sale - 2019.03.23 at 19h 47m 32s.xml">
+    <history-entry file="All_in_Point_Of_Sale - 2019.03.24 at 19h 30m 47s.xml">
       <configuration name="All in Point_Of_Sale" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20128000" />
+    <option name="totallyTimeSpent" value="24987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -335,7 +353,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32932165" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.33150986" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.33044422" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -367,7 +385,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ReceiptTest.java" />
     <entry file="file://$PROJECT_DIR$/Point_Of_Sale.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -375,24 +392,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LcdDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -412,14 +415,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BarcodesScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="323">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#212#213#0" expanded="true" />
@@ -431,16 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/PointOfSaleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -448,17 +442,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LcdDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BarcodesScannerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PointOfSaleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Receipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PointOfSale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+        <state relative-caret-position="825">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ReceiptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
