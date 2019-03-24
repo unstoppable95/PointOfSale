@@ -1,17 +1,18 @@
-
-
-import java.util.Random;
-
 public class Product {
     private String barcode;
     private String name;
     private Double price;
 
-
-    public Product(String barcode) {
+    public void setBarcode(String barcode) {
         this.barcode = barcode;
-        this.name =barcode+"_product";
-        this.price = new Random().nextDouble()+1;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public String getBarcode() {

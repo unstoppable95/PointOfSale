@@ -16,7 +16,7 @@ public class PointOfSaleTest {
     public static final String CORRECT_BARCODE = "MILK";
 
     @Mock
-    BarCodesScanner barCodesScanner;
+    BarcodesScanner barCodesScanner;
 
     @Mock
     Printer printer;

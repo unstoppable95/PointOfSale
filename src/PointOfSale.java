@@ -1,38 +1,41 @@
 
 
-public class PointOfSale {
+public class PointOfSale implements BarcodesScannerListener {
 
     private LcdDisplay lcdDisplay;
     private Receipt receipt;
     private Printer printer;
-    private BarCodesScanner barCodesScanner;
+    private ProductDao productDao;
 
-    public enum BarCodes {INVALID_BARCODE , EXIT, PRODUCT_NOT_FOUND }
+    public static final String INVALID_BARCODE = "Warning, invalid barcode";
+    public static final String PRODUCT_NOT_FOUND = "Sorry, product not found";
+    public static final String EXIT = "Exit";
 
-    public PointOfSale(LcdDisplay lcdDisplay, Printer printer, BarCodesScanner barCodesScanner) {
+    public PointOfSale(LcdDisplay lcdDisplay, Printer printer,ProductDao productDao) {
         this.lcdDisplay = lcdDisplay;
         this.receipt = new Receipt();
         this.printer = printer;
-        this.barCodesScanner = barCodesScanner;
+        this.productDao=productDao;
     }
 
-    public void scanProduct() {
-        String barcode=barCodesScanner.scanProductBarcode();
+    @Override
+    public void onScanProduct(String barcode) {
+
         if(barcode==null || barcode.isEmpty()){
-            lcdDisplay.printCommunication(BarCodes.INVALID_BARCODE.name());
+            lcdDisplay.printCommunication(INVALID_BARCODE);
         }
-        else if (barcode.equals(BarCodes.EXIT.name())){
+        else if (barcode.equals(EXIT)){
                 printer.printReceipt(receipt.toString());
                 lcdDisplay.printTotalSum(receipt.getSum());
         }
         else {
-            Product p = new Product(barcode);
+            Product p = productDao.getProductByBarcode(barcode);
             if (p!=null){
                 receipt.addProduct(p);
                 lcdDisplay.printCommunication(p.toString());
             }
             else {
-                lcdDisplay.printCommunication(BarCodes.PRODUCT_NOT_FOUND.name());
+                lcdDisplay.printCommunication(PRODUCT_NOT_FOUND);
             }
         }
 
@@ -52,7 +55,5 @@ public class PointOfSale {
         return printer;
     }
 
-    public BarCodesScanner getBarCodesScanner() {
-        return barCodesScanner;
-    }
+   
 }
